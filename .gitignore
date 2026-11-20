@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+*.log
+.DS_Store
+Thumbs.db
+[Ii]nvestment*
+*payback*

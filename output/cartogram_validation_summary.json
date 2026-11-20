@@ -1,0 +1,24 @@
+{
+  "total": {
+    "view": "total",
+    "mean_abs_area_error_pct": 0.9486483780002131,
+    "max_abs_area_error_pct": 9.497989579676103,
+    "worst_country": "HKG",
+    "countries_within_10pct": 36,
+    "overlap_pct_of_land": 3.9487898492240453e-10,
+    "invalid_countries": 0,
+    "adjacency_pairs_original": 325,
+    "adjacency_pairs_preserved": 324
+  },
+  "tuition": {
+    "view": "tuition",
+    "mean_abs_area_error_pct": 1.0158295858269875,
+    "max_abs_area_error_pct": 10.37667213129615,
+    "worst_country": "HKG",
+    "countries_within_10pct": 35,
+    "overlap_pct_of_land": 3.6842155724524235e-10,
+    "invalid_countries": 0,
+    "adjacency_pairs_original": 325,
+    "adjacency_pairs_preserved": 325
+  }
+}

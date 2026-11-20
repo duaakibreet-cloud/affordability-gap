@@ -1,0 +1,916 @@
+{
+  "baseline": {
+    "invalid_countries": [],
+    "invalid_count": 0,
+    "pairwise_overlap_km2": 0.0,
+    "pairwise_overlap_pct_of_summed_land": 0.0,
+    "overlaps": []
+  },
+  "dataset_sha256": "1cdc1b7bf315ec1fe7d08a89fcb5c781f6054ae6d344a7e94ac2e77a4d98d4eb",
+  "run_config": {
+    "iteration_limit": 40,
+    "adapt_start": -1,
+    "excluded": [
+      "RUS"
+    ]
+  },
+  "total": {
+    "before_cleanup": {
+      "invalid_countries": [
+        "VNM",
+        "VEN",
+        "UZB",
+        "MHL",
+        "USA",
+        "SGS",
+        "IOT",
+        "PCN",
+        "FLK",
+        "CYM",
+        "GBR",
+        "UKR",
+        "TKM",
+        "TUR",
+        "TON",
+        "THA",
+        "TZA",
+        "SYR",
+        "SWE",
+        "SDS",
+        "LKA",
+        "ESP",
+        "KOR",
+        "SVN",
+        "SEN",
+        "SAU",
+        "KNA",
+        "RUS",
+        "PRT",
+        "POL",
+        "PHL",
+        "PNG",
+        "PAN",
+        "NOR",
+        "PRK",
+        "NGA",
+        "NZL",
+        "COK",
+        "NLD",
+        "MOZ",
+        "MAR",
+        "SAH",
+        "MNE",
+        "MDA",
+        "MEX",
+        "MRT",
+        "MYS",
+        "MWI",
+        "LBR",
+        "LBN",
+        "LAO",
+        "KIR",
+        "KEN",
+        "JOR",
+        "JPN",
+        "ITA",
+        "ISR",
+        "PSX",
+        "IRL",
+        "IRQ",
+        "IRN",
+        "IDN",
+        "IND",
+        "ISL",
+        "HND",
+        "GUY",
+        "GNB",
+        "GRC",
+        "DEU",
+        "FRA",
+        "SPM",
+        "WLF",
+        "PYF",
+        "ALD",
+        "FIN",
+        "FJI",
+        "SLV",
+        "ECU",
+        "GRL",
+        "FRO",
+        "DNK",
+        "CUB",
+        "HRV",
+        "CIV",
+        "CHN",
+        "MAC",
+        "HKG",
+        "CHL",
+        "CAN",
+        "KHM",
+        "MMR",
+        "BDI",
+        "BRA",
+        "BOL",
+        "BTN",
+        "BLZ",
+        "BGD",
+        "BHS",
+        "AUS",
+        "HMD",
+        "ARG",
+        "ATG",
+        "AGO",
+        "ALB"
+      ],
+      "invalid_count": 104,
+      "pairwise_overlap_km2": 43962.696916044246,
+      "pairwise_overlap_pct_of_summed_land": 0.03680755802803683,
+      "overlaps": [
+        {
+          "a": "SGP",
+          "b": "MYS",
+          "overlap_km2": 26986.780826359893
+        },
+        {
+          "a": "CHN",
+          "b": "HKG",
+          "overlap_km2": 6019.731129698756
+        },
+        {
+          "a": "LBN",
+          "b": "EGY",
+          "overlap_km2": 1836.293599124689
+        },
+        {
+          "a": "LBN",
+          "b": "JOR",
+          "overlap_km2": 1262.8216600651308
+        },
+        {
+          "a": "SYR",
+          "b": "LBN",
+          "overlap_km2": 1145.4657686106486
+        },
+        {
+          "a": "ISR",
+          "b": "PSX",
+          "overlap_km2": 942.4944572211583
+        },
+        {
+          "a": "ISR",
+          "b": "EGY",
+          "overlap_km2": 941.8012705376512
+        },
+        {
+          "a": "SYR",
+          "b": "JOR",
+          "overlap_km2": 931.7193218899351
+        },
+        {
+          "a": "LBN",
+          "b": "PSX",
+          "overlap_km2": 912.0015919278914
+        },
+        {
+          "a": "LBN",
+          "b": "ISR",
+          "overlap_km2": 792.3792999546715
+        },
+        {
+          "a": "JOR",
+          "b": "PSX",
+          "overlap_km2": 657.1324224686132
+        },
+        {
+          "a": "TUR",
+          "b": "LBN",
+          "overlap_km2": 442.90464270836816
+        },
+        {
+          "a": "JOR",
+          "b": "ISR",
+          "overlap_km2": 440.1214567091445
+        },
+        {
+          "a": "TUR",
+          "b": "SYR",
+          "overlap_km2": 293.7619408396788
+        },
+        {
+          "a": "KOR",
+          "b": "PRK",
+          "overlap_km2": 184.9574742344093
+        },
+        {
+          "a": "SYR",
+          "b": "PSX",
+          "overlap_km2": 64.41879760332318
+        },
+        {
+          "a": "SYR",
+          "b": "ISR",
+          "overlap_km2": 31.979143332676173
+        },
+        {
+          "a": "USA",
+          "b": "CAN",
+          "overlap_km2": 16.337940855267917
+        },
+        {
+          "a": "PSX",
+          "b": "EGY",
+          "overlap_km2": 15.897894832232653
+        },
+        {
+          "a": "MMR",
+          "b": "BGD",
+          "overlap_km2": 13.035540503868805
+        },
+        {
+          "a": "VEN",
+          "b": "GUY",
+          "overlap_km2": 9.908003379488205
+        },
+        {
+          "a": "MAC",
+          "b": "HKG",
+          "overlap_km2": 7.162626403618157
+        },
+        {
+          "a": "CHN",
+          "b": "MAC",
+          "overlap_km2": 5.635479650974017
+        },
+        {
+          "a": "SWE",
+          "b": "DNK",
+          "overlap_km2": 4.78854734983522
+        },
+        {
+          "a": "SAH",
+          "b": "MRT",
+          "overlap_km2": 2.0391431253996193
+        },
+        {
+          "a": "LBR",
+          "b": "CIV",
+          "overlap_km2": 0.3564713873239699
+        },
+        {
+          "a": "PAN",
+          "b": "CRI",
+          "overlap_km2": 0.1670496804736441
+        },
+        {
+          "a": "IND",
+          "b": "BGD",
+          "overlap_km2": 0.15645133832770736
+        },
+        {
+          "a": "IND",
+          "b": "MMR",
+          "overlap_km2": 0.15645133827973995
+        },
+        {
+          "a": "SEN",
+          "b": "MRT",
+          "overlap_km2": 0.06358320712119364
+        },
+        {
+          "a": "SVN",
+          "b": "HRV",
+          "overlap_km2": 0.06238214284710248
+        },
+        {
+          "a": "HUN",
+          "b": "HRV",
+          "overlap_km2": 0.06238214284702681
+        },
+        {
+          "a": "SVN",
+          "b": "HUN",
+          "overlap_km2": 0.0623821428469494
+        },
+        {
+          "a": "UZB",
+          "b": "AFG",
+          "overlap_km2": 0.012085473341499921
+        },
+        {
+          "a": "UZB",
+          "b": "TJK",
+          "overlap_km2": 0.012085473341499921
+        },
+        {
+          "a": "TJK",
+          "b": "AFG",
+          "overlap_km2": 0.012085473341499921
+        },
+        {
+          "a": "THA",
+          "b": "KHM",
+          "overlap_km2": 0.00129994101987475
+        },
+        {
+          "a": "GUY",
+          "b": "BRA",
+          "overlap_km2": 0.0011134579067608305
+        },
+        {
+          "a": "VEN",
+          "b": "BRA",
+          "overlap_km2": 0.0011134579065479337
+        }
+      ]
+    },
+    "after_cleanup": {
+      "invalid_countries": [],
+      "invalid_count": 0,
+      "pairwise_overlap_km2": 0.00047147773449076404,
+      "pairwise_overlap_pct_of_summed_land": 3.9487898492240453e-10,
+      "overlaps": [
+        {
+          "a": "SGP",
+          "b": "MYS",
+          "overlap_km2": 0.00022003573237695104
+        },
+        {
+          "a": "TUR",
+          "b": "SYR",
+          "overlap_km2": 0.00014693380013685095
+        },
+        {
+          "a": "CHN",
+          "b": "MAC",
+          "overlap_km2": 3.785130003525997e-05
+        },
+        {
+          "a": "LBN",
+          "b": "ISR",
+          "overlap_km2": 3.229985067730678e-05
+        },
+        {
+          "a": "LBN",
+          "b": "JOR",
+          "overlap_km2": 1.8850051334215142e-05
+        },
+        {
+          "a": "LBN",
+          "b": "PSX",
+          "overlap_km2": 9.318100068516188e-06
+        },
+        {
+          "a": "USA",
+          "b": "CAN",
+          "overlap_km2": 6.188899861663952e-06
+        }
+      ],
+      "original_border_pairs": 325,
+      "preserved_border_pairs": 324,
+      "lost_border_pairs": [
+        [
+          "SYR",
+          "ISR"
+        ]
+      ],
+      "new_border_pairs": [
+        [
+          "LBN",
+          "EGY"
+        ],
+        [
+          "LBN",
+          "JOR"
+        ],
+        [
+          "LBN",
+          "PSX"
+        ],
+        [
+          "MAC",
+          "HKG"
+        ],
+        [
+          "SGP",
+          "MYS"
+        ],
+        [
+          "SWE",
+          "DNK"
+        ]
+      ]
+    },
+    "area_summary": {
+      "view": "total",
+      "mean_abs_area_error_pct": 0.9486483780002131,
+      "max_abs_area_error_pct": 9.497989579676103,
+      "worst_country": "HKG",
+      "countries_within_10pct": 36,
+      "overlap_pct_of_land": 3.9487898492240453e-10,
+      "invalid_countries": 0,
+      "adjacency_pairs_original": 325,
+      "adjacency_pairs_preserved": 324
+    },
+    "geometry_cleanup_area_change_pct": {
+      "USA": -0.058060489315925334,
+      "GBR": -0.03260129524181865,
+      "ARE": 0.0,
+      "TUR": -0.020505721927455145,
+      "THA": 7.750453612231922e-08,
+      "CHE": 0.0,
+      "SWE": -0.0014110237630204914,
+      "ESP": 0.0,
+      "KOR": -0.03136183502865375,
+      "ZAF": 0.0,
+      "SGP": -1.9031840587749094,
+      "SAU": 0.0,
+      "PER": 0.0,
+      "NZL": 0.019587151316735607,
+      "NLD": 0.07693340749268529,
+      "MAR": 0.0,
+      "MEX": 0.00018529553693635847,
+      "MYS": 1.0179270300794574,
+      "LBN": 0.005610326875848948,
+      "KEN": 2.71659634787369e-06,
+      "JPN": 1.0637958958170657e-06,
+      "ITA": 0.0,
+      "IRL": 0.0,
+      "IDN": -0.08641931812196635,
+      "DEU": -0.0011903536329294084,
+      "FRA": 0.0006954012421012123,
+      "EGY": -0.028968200564560842,
+      "DNK": 0.0,
+      "CIV": 6.088526245395798e-05,
+      "COL": 0.0,
+      "CHN": 0.06834469891108252,
+      "HKG": -1.665342760102806,
+      "CHL": -0.00033023979403301595,
+      "CAN": -0.9105826943549111,
+      "BRA": -0.0016281632062797868,
+      "AUS": 0.0027644298102647014
+    }
+  },
+  "tuition": {
+    "before_cleanup": {
+      "invalid_countries": [
+        "VNM",
+        "VEN",
+        "UZB",
+        "MHL",
+        "USA",
+        "SGS",
+        "IOT",
+        "PCN",
+        "FLK",
+        "CYM",
+        "GBR",
+        "UKR",
+        "TKM",
+        "TUR",
+        "TON",
+        "THA",
+        "TZA",
+        "SYR",
+        "SWE",
+        "SDS",
+        "LKA",
+        "ESP",
+        "KOR",
+        "SVN",
+        "SEN",
+        "SAU",
+        "KNA",
+        "RUS",
+        "PRT",
+        "POL",
+        "PHL",
+        "PNG",
+        "PAN",
+        "NOR",
+        "PRK",
+        "NGA",
+        "NZL",
+        "COK",
+        "NLD",
+        "MOZ",
+        "MAR",
+        "SAH",
+        "MNE",
+        "MDA",
+        "MEX",
+        "MRT",
+        "MYS",
+        "MWI",
+        "LBR",
+        "LBN",
+        "LAO",
+        "KIR",
+        "KEN",
+        "JOR",
+        "JPN",
+        "ITA",
+        "ISR",
+        "PSX",
+        "IRL",
+        "IRQ",
+        "IRN",
+        "IDN",
+        "IND",
+        "ISL",
+        "HND",
+        "GUY",
+        "GNB",
+        "GRC",
+        "DEU",
+        "FRA",
+        "SPM",
+        "WLF",
+        "PYF",
+        "ALD",
+        "FIN",
+        "FJI",
+        "SLV",
+        "ECU",
+        "GRL",
+        "FRO",
+        "DNK",
+        "CUB",
+        "HRV",
+        "CHN",
+        "MAC",
+        "HKG",
+        "CHL",
+        "CAN",
+        "KHM",
+        "MMR",
+        "BDI",
+        "BRA",
+        "BOL",
+        "BTN",
+        "BLZ",
+        "BGD",
+        "BHS",
+        "AUS",
+        "HMD",
+        "ARG",
+        "ATG",
+        "AGO",
+        "ALB"
+      ],
+      "invalid_count": 103,
+      "pairwise_overlap_km2": 64940.16059043731,
+      "pairwise_overlap_pct_of_summed_land": 0.054732012069427446,
+      "overlaps": [
+        {
+          "a": "SGP",
+          "b": "MYS",
+          "overlap_km2": 40317.65790390378
+        },
+        {
+          "a": "CHN",
+          "b": "HKG",
+          "overlap_km2": 6789.487081997783
+        },
+        {
+          "a": "LBN",
+          "b": "EGY",
+          "overlap_km2": 3142.0724757173903
+        },
+        {
+          "a": "SYR",
+          "b": "LBN",
+          "overlap_km2": 2049.6592791308594
+        },
+        {
+          "a": "ISR",
+          "b": "EGY",
+          "overlap_km2": 1833.5782251620487
+        },
+        {
+          "a": "LBN",
+          "b": "ISR",
+          "overlap_km2": 1776.2320998734763
+        },
+        {
+          "a": "ISR",
+          "b": "PSX",
+          "overlap_km2": 1363.7903141509048
+        },
+        {
+          "a": "TUR",
+          "b": "SYR",
+          "overlap_km2": 1355.618153840043
+        },
+        {
+          "a": "LBN",
+          "b": "JOR",
+          "overlap_km2": 1194.8312102819582
+        },
+        {
+          "a": "SYR",
+          "b": "JOR",
+          "overlap_km2": 1106.482358339984
+        },
+        {
+          "a": "TUR",
+          "b": "LBN",
+          "overlap_km2": 1103.2357060505817
+        },
+        {
+          "a": "LBN",
+          "b": "PSX",
+          "overlap_km2": 1037.4285562483794
+        },
+        {
+          "a": "PSX",
+          "b": "EGY",
+          "overlap_km2": 840.221899401672
+        },
+        {
+          "a": "KOR",
+          "b": "PRK",
+          "overlap_km2": 263.1364617718206
+        },
+        {
+          "a": "MMR",
+          "b": "BGD",
+          "overlap_km2": 206.35027453601046
+        },
+        {
+          "a": "JOR",
+          "b": "ISR",
+          "overlap_km2": 187.37104567574113
+        },
+        {
+          "a": "SYR",
+          "b": "ISR",
+          "overlap_km2": 115.86566945918584
+        },
+        {
+          "a": "JOR",
+          "b": "PSX",
+          "overlap_km2": 115.11777900675611
+        },
+        {
+          "a": "SYR",
+          "b": "PSX",
+          "overlap_km2": 90.96761489370249
+        },
+        {
+          "a": "USA",
+          "b": "CAN",
+          "overlap_km2": 16.82506352511754
+        },
+        {
+          "a": "VEN",
+          "b": "GUY",
+          "overlap_km2": 9.592087602548395
+        },
+        {
+          "a": "MAC",
+          "b": "HKG",
+          "overlap_km2": 8.32601035448011
+        },
+        {
+          "a": "CHN",
+          "b": "MAC",
+          "overlap_km2": 7.83026089796792
+        },
+        {
+          "a": "SAH",
+          "b": "MRT",
+          "overlap_km2": 2.068229864870677
+        },
+        {
+          "a": "SWE",
+          "b": "DNK",
+          "overlap_km2": 1.8407550391058944
+        },
+        {
+          "a": "IND",
+          "b": "BGD",
+          "overlap_km2": 1.1927051179910508
+        },
+        {
+          "a": "IND",
+          "b": "BTN",
+          "overlap_km2": 1.0968469140246233
+        },
+        {
+          "a": "BTN",
+          "b": "BGD",
+          "overlap_km2": 1.094571430211943
+        },
+        {
+          "a": "SEN",
+          "b": "MRT",
+          "overlap_km2": 0.4187516988574845
+        },
+        {
+          "a": "LBR",
+          "b": "CIV",
+          "overlap_km2": 0.22237184972607013
+        },
+        {
+          "a": "PAN",
+          "b": "CRI",
+          "overlap_km2": 0.16532058052391047
+        },
+        {
+          "a": "IND",
+          "b": "MMR",
+          "overlap_km2": 0.09813368777764682
+        },
+        {
+          "a": "SVN",
+          "b": "HRV",
+          "overlap_km2": 0.0726493686991619
+        },
+        {
+          "a": "HUN",
+          "b": "HRV",
+          "overlap_km2": 0.07264936869908799
+        },
+        {
+          "a": "SVN",
+          "b": "HUN",
+          "overlap_km2": 0.07264936869901185
+        },
+        {
+          "a": "UZB",
+          "b": "AFG",
+          "overlap_km2": 0.016679966581636108
+        },
+        {
+          "a": "UZB",
+          "b": "TJK",
+          "overlap_km2": 0.016679966581636108
+        },
+        {
+          "a": "TJK",
+          "b": "AFG",
+          "overlap_km2": 0.016679966581636108
+        },
+        {
+          "a": "GUY",
+          "b": "BRA",
+          "overlap_km2": 0.0049651393872993275
+        },
+        {
+          "a": "VEN",
+          "b": "BRA",
+          "overlap_km2": 0.00496513938708615
+        },
+        {
+          "a": "THA",
+          "b": "KHM",
+          "overlap_km2": 0.00290317982356689
+        },
+        {
+          "a": "IND",
+          "b": "CHN",
+          "overlap_km2": 0.0022754837946075846
+        },
+        {
+          "a": "CHN",
+          "b": "BTN",
+          "overlap_km2": 0.0022754837936182102
+        }
+      ]
+    },
+    "after_cleanup": {
+      "invalid_countries": [],
+      "invalid_count": 0,
+      "pairwise_overlap_km2": 0.00043691423893069917,
+      "pairwise_overlap_pct_of_summed_land": 3.6842155724524235e-10,
+      "overlaps": [
+        {
+          "a": "PSX",
+          "b": "EGY",
+          "overlap_km2": 0.00011362504871126157
+        },
+        {
+          "a": "SYR",
+          "b": "ISR",
+          "overlap_km2": 9.396660008751467e-05
+        },
+        {
+          "a": "LBN",
+          "b": "ISR",
+          "overlap_km2": 9.123768732444659e-05
+        },
+        {
+          "a": "TUR",
+          "b": "SYR",
+          "overlap_km2": 4.402999323509636e-05
+        },
+        {
+          "a": "ISR",
+          "b": "PSX",
+          "overlap_km2": 3.796829915134078e-05
+        },
+        {
+          "a": "IND",
+          "b": "BTN",
+          "overlap_km2": 2.874909935740903e-05
+        },
+        {
+          "a": "CHN",
+          "b": "MAC",
+          "overlap_km2": 2.3026411054254368e-05
+        },
+        {
+          "a": "IND",
+          "b": "CHN",
+          "overlap_km2": 4.311100009375811e-06
+        }
+      ],
+      "original_border_pairs": 325,
+      "preserved_border_pairs": 325,
+      "lost_border_pairs": [],
+      "new_border_pairs": [
+        [
+          "BTN",
+          "BGD"
+        ],
+        [
+          "LBN",
+          "EGY"
+        ],
+        [
+          "LBN",
+          "JOR"
+        ],
+        [
+          "LBN",
+          "PSX"
+        ],
+        [
+          "MAC",
+          "HKG"
+        ],
+        [
+          "SGP",
+          "MYS"
+        ],
+        [
+          "SWE",
+          "DNK"
+        ],
+        [
+          "SYR",
+          "PSX"
+        ]
+      ]
+    },
+    "area_summary": {
+      "view": "tuition",
+      "mean_abs_area_error_pct": 1.0158295858269875,
+      "max_abs_area_error_pct": 10.37667213129615,
+      "worst_country": "HKG",
+      "countries_within_10pct": 35,
+      "overlap_pct_of_land": 3.6842155724524235e-10,
+      "invalid_countries": 0,
+      "adjacency_pairs_original": 325,
+      "adjacency_pairs_preserved": 325
+    },
+    "geometry_cleanup_area_change_pct": {
+      "USA": -0.06396606985602515,
+      "GBR": -0.03965770500073962,
+      "ARE": 0.0,
+      "TUR": -0.085448975287028,
+      "THA": 1.6707053518416615e-07,
+      "CHE": 0.0,
+      "SWE": -0.0006774126302122596,
+      "ESP": 0.0,
+      "KOR": -0.04614315536199953,
+      "ZAF": 0.0,
+      "SGP": -2.7722695032274203,
+      "SAU": 0.0,
+      "PER": 0.0,
+      "NZL": 0.01978634950330349,
+      "NLD": 0.07443659157333471,
+      "MAR": 0.0,
+      "MEX": 0.00016721657976059845,
+      "MYS": 0.7130286094518379,
+      "LBN": -0.010251656130666476,
+      "KEN": 4.205072889895689e-06,
+      "JPN": 0.0001771467225131218,
+      "ITA": 0.0,
+      "IRL": 0.0,
+      "IDN": 0.03692681427904798,
+      "DEU": -0.0019874194685187696,
+      "FRA": 0.0006533794170371365,
+      "EGY": -0.03946068155383786,
+      "DNK": 0.0,
+      "CIV": -1.2548897920794388e-05,
+      "COL": 0.0,
+      "CHN": -0.0027870719686795553,
+      "HKG": -1.943194108324453,
+      "CHL": -0.0004088388564471579,
+      "CAN": -0.8167004106578779,
+      "BRA": -0.004531391085438319,
+      "AUS": 0.0024349861502903636
+    }
+  }
+}
