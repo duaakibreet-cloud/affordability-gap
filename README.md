@@ -6,7 +6,9 @@ project, *The Master's Degree Dilemma: Is It Worth the Price?*
 The app starts with an undistorted world map. Tick **Distort map by affordability**
 to resize countries approximately in proportion to the months of local earnings
 needed for one year of a business master's education. The only cost view is
-**Tuition + Living Costs**. Colored countries provide interactive hover details;
+**Tuition + Living Costs**. All 36 included countries share one teal fill, so
+area—not a color scale—communicates affordability in the distorted view.
+Included countries provide interactive hover details;
 neutral countries have no affordability tooltip.
 
 ## Run locally

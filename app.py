@@ -42,9 +42,9 @@ def main() -> None:
             st.error(f"Could not load the Python map data: {error}")
             st.stop()
         st.altair_chart(chart, width="stretch", theme=None, key="affordability_map")
-        st.caption("Gray countries are outside the affordability analysis."
-                   + (" Area shows geography; color shows affordability." if original else
-                      " Area and color show affordability."))
+        st.caption("Teal countries are included; gray countries are outside the affordability analysis."
+                   + (" Area shows geography. Tick the checkbox to compare affordability by country size." if original else
+                      " Country area represents months of earnings needed for tuition plus living costs."))
     with st.expander("About the data and cartogram"):
         sample = frame.loc[frame["ISO3"].ne("RUS")]
         st.write(f"{len(sample)} countries · {int(sample['University_Count'].sum())} sampled universities. "
@@ -62,7 +62,7 @@ def main() -> None:
                  "The university sample is not a census of national programs. The original CSV "
                  "contains source URLs, verification status and country-specific quality notes.")
         st.caption("Sources: project dataset; Natural Earth 1:50m; Dougenik, Chrisman & Niemeyer "
-                   "(1985). Color uses a fixed logarithmic green-to-red scale from 1 to 256 months.")
+                   "(1985). All included countries use the same teal fill; affordability is encoded by area.")
 
 if __name__ == "__main__":
     main()

@@ -12,7 +12,7 @@ from shapely.geometry import mapping, shape
 from shapely.ops import transform
 
 METRICS = {"total": "Total_Affordability_Months", "tuition": "Tuition_Affordability_Months"}
-COLORS = ["#1a9850", "#91cf60", "#d9ef8b", "#fee08b", "#fc8d59", "#d73027", "#a50026"]
+SAMPLE_COLOR = "#087f8c"
 NUMERIC = ["University_Count", "Avg_Annual_Tuition_USD", "Avg_Annual_Living_USD",
            "Avg_Total_Cost_USD", "Avg_Monthly_Earnings_USD", *METRICS.values()]
 
@@ -93,12 +93,8 @@ def build_chart(countries: list[dict], frame: pd.DataFrame, metric: str) -> alt.
         fill="#d6d6d6", stroke="#ffffff", strokeWidth=0.35, tooltip=False
     )
     sampled = alt.Chart(alt.Data(values=features(True), format=alt.DataFormat(type="json", property="features"))).mark_geoshape(
-        stroke="#ffffff", strokeWidth=0.6
+        fill=SAMPLE_COLOR, stroke="#ffffff", strokeWidth=0.6
     ).encode(
-        color=alt.Color("properties.months:Q", scale=alt.Scale(type="log", domain=[1, 256], range=COLORS, clamp=True),
-                        legend=alt.Legend(title="Months of local earnings", orient="bottom",
-                                          values=[1, 2, 4, 8, 16, 32, 64, 128, 256],
-                                          gradientLength=250, titleLimit=300)),
         tooltip=[alt.Tooltip("properties.country:N", title="Country"),
                  alt.Tooltip("properties.months:Q", title="Months of earnings", format=".1f"),
                  alt.Tooltip("properties.tuition:Q", title="Annual tuition (USD)", format="$,.0f"),
@@ -108,5 +104,4 @@ def build_chart(countries: list[dict], frame: pd.DataFrame, metric: str) -> alt.
     )
     return (neutral + sampled).project(type="identity", reflectY=True).properties(
         height=480, background="#f6f5f0", description="Area-distorted education affordability cartogram"
-    ).configure_view(stroke=None).configure_legend(
-        titleColor="#12283b", labelColor="#526773", titleFontSize=12, labelFontSize=11)
+    ).configure_view(stroke=None)
