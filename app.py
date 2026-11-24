@@ -45,24 +45,6 @@ def main() -> None:
         st.caption("Teal countries are included; gray countries are outside the affordability analysis."
                    + (" Area shows geography. Tick the checkbox to compare affordability by country size." if original else
                       " Country area represents months of earnings needed for tuition plus living costs."))
-    with st.expander("About the data and cartogram"):
-        sample = frame.loc[frame["ISO3"].ne("RUS")]
-        st.write(f"{len(sample)} countries · {int(sample['University_Count'].sum())} sampled universities. "
-                 "Russia is excluded due to cartogram distortion limitations; its CSV row is unchanged.")
-        st.write("Months of earnings = average annual education cost ÷ average monthly earnings. "
-                 "The app uses the supplied affordability columns without changing their values. "
-                 "Months express an income equivalent, not the time needed to save.")
-        st.write("The distorted view uses saved, validated Python-generated contiguous cartogram polygons "
-                 "in Equal Earth projected metres. Altair displays these coordinates directly with an "
-                 "identity projection. The original-map view is projected from Natural Earth.")
-        st.write("The Python rubber-sheet algorithm and Shapely cleanup approximate the target areas. "
-                 "For tuition plus living costs, mean area error is about 0.95% and the worst error "
-                 "is about 9.50%. Some short borders change. See output/VALIDATION.md.")
-        st.write("Income years and definitions vary. Five countries use estimated earnings. "
-                 "The university sample is not a census of national programs. The original CSV "
-                 "contains source URLs, verification status and country-specific quality notes.")
-        st.caption("Sources: project dataset; Natural Earth 1:50m; Dougenik, Chrisman & Niemeyer "
-                   "(1985). All included countries use the same teal fill; affordability is encoded by area.")
 
 if __name__ == "__main__":
     main()
